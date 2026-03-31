@@ -1191,3 +1191,6 @@ img {
 .menu-category.active {
   display: block;
 }
+   body {
+  background-color: red;
+}
