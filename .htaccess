@@ -1,0 +1,8 @@
+# Serve index.html as the default document and support clean URLs.
+DirectoryIndex index.html
+
+# Rewrite all requests to index.html unless the file or directory exists.
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /index.html [L,QSA]

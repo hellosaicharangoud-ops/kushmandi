@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kush Mandi | Authentic Mandi Restaurant in Gachibowli</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-kush">Kush</span>
+                    <span class="logo-mandi">Mandi</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="rating-badge">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 1l2.5 6.5L19 8l-5.5 4.5L15 19l-5-3.5L5 19l1.5-6.5L1 8l6.5-.5L10 1z"/>
+                    </svg>
+                    <span>Rated 5.0 by 500+ Happy customers in Hyderabad</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Experience<br>
+                    the True Taste<br>
+                    of <span class="highlight">Authentic<br>Mandi</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Experience rich Arabian flavors with our juicy Chicken Mandi, tender Mutton Mandi, and fresh seafood specialties — crafted for unforgettable dining.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <button type="button" class="btn btn-secondary" onclick="openBooking()">Reserve a Table</button>
+                    <a href="https://www.swiggy.com/city/hyderabad/kush-mandi-gachibowli-rest1062885?utm_source=GooglePlaceOrder&utm_campaign=GoogleMap&is_retargeting=true&media_source=GooglePlaceOrder" target="_blank" rel="noopener" class="btn btn-secondary">Order Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Explore our authentic Arabian delights</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="chicken">🍗 Chicken Mandis</button>
+                <button class="menu-tab" data-category="mutton">🥩 Mutton Mandis</button>
+                <button class="menu-tab" data-category="starters">🔥 Non-Veg Starters</button>
+                <button class="menu-tab" data-category="bbq">🍢 BBQ & Kebabs</button>
+                <button class="menu-tab" data-category="biryani">🍚 Kush Biryanis</button>
+                <button class="menu-tab" data-category="veg">🥦 Veg Mandis</button>
+                <button class="menu-tab" data-category="combos">👥 Combos</button>
+                <button class="menu-tab" data-category="curries">🫓 Curries & Breads</button>
+                <button class="menu-tab" data-category="desserts">🍮 Desserts & Drinks</button>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="menu-content">
+                
+                <!-- Chicken Mandis -->
+                <div class="menu-category active" data-category="chicken">
+                    <div class="category-info">
+                        <p class="serving-note">H = Half (Serves 2) · F = Full (Serves 3)</p>
+                    </div>
+                    
+                    <h3 class="subcategory-title">Spl Chicken Mandis</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Fry Mandi</h4>
+                                <span class="item-price">₹499 H / ₹749 F</span>
+                            </div>
+                            <p class="item-desc">Chicken cooked in traditional mandi spices and deep fried.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Single Chicken Mandi</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Faham Mandi</h4>
+                                <span class="item-price">₹599 (2P) / ₹1099 (4P)</span>
+                            </div>
+                            <p class="item-desc">Chicken soaked in traditional mandi spices and roasted on barbeque grill.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Crispy Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Chicken coated with batter and crispy breadcrumbs and deep fried.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Masala Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Rich gravy chicken masala cooked with arabian spices.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Banjara Kebab Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Delicious spicy kebab fully loaded with the fresh spices, cilantro, mint and cumin flavor and grilled.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Sheekh Kebab Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Minced boneless chicken is ground with spices and aromatics and then wrapped around a skewer.</p>
+                        </div>
+
+                        <div class="menu-item special">
+                            <span class="badge">Chef's Special</span>
+                            <div class="item-header">
+                                <h4 class="item-name">Kush Special Double Sheekh Kebab Mandi</h4>
+                                <span class="item-price">₹559 H / ₹819 F</span>
+                            </div>
+                            <p class="item-desc">Minced boneless chicken & mutton together grounded with spices and aromatics and then wrapped around a skewer.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subcategory-title">Chicken Barbeque & Kebab Mandis</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Tandoori Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Tandoori marinade is a mixture of Greek yogurt, garlic, lemon juice, garam masala, paprika, cumin, coriander and ginger.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Reshmi Kebab Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Creamy grilled chicken kebabs marinated in fresh cream, mild spices and nuts.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Tikka Kebab Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Chicken pieces marinated in yogurt along with lime juice with Kashmir chilli and grilled on a skewer.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Tangdi Kebab Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Soft, moist chicken leg part marinated in aromatic Indian spices and grilled to perfection.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Malai Tikka Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Chicken tikka smothered in a wet rub of yogurt and grilled.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Zaafrani Kebab Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Marinated together with SAFFRON, garlic, red chili, olive oil, mint leaves and lemon juice and grilled.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Tikka Masala Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Chicken pieces marinated in yogurt along with lime juice with Kashmir chilli and cooked with rich gravy masala.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Hariyali Kebab Mandi</h4>
+                                <span class="item-price">₹499 H / ₹799 F</span>
+                            </div>
+                            <p class="item-desc">Boneless chicken pieces are marinated in the mixture of Curd, Spinach and Mint leaves and grilled.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subcategory-title">Chicken Chinese Mandis</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken-65 Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken-555 Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Manchurian Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chilli Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Ginger Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Pepper Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Majestic Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Schezwan Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Drumstick Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Lollipop Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Dragon Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Crispy Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Popcorn Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Sesame Chicken Mandi</h4>
+                                <span class="item-price">₹549 H / ₹799 F</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mutton Mandis -->
+                <div class="menu-category" data-category="mutton">
+                    <div class="category-info">
+                        <p class="serving-note">H = Half (Serves 2) · F = Full (Serves 3)</p>
+                    </div>
+                    
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mutton Arabian Mandi</h4>
+                                <span class="item-price">₹679 H / ₹999 F</span>
+                            </div>
+                            <p class="item-desc">Tender mutton pieces in steam cooked in arabian traditional spices.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Ghee Roasted Mutton Mandi</h4>
+                                <span class="item-price">₹749 H / ₹1049 F</span>
+                            </div>
+                            <p class="item-desc">Tender mutton steam cooked in arabian traditional spices and roasted in drizzling ghee.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mutton Juicy Mandi</h4>
+                                <span class="item-price">₹749 H / ₹1049 F</span>
+                            </div>
+                            <p class="item-desc">Succulent mutton pieces cooked in rich gravy along with arabian spices.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mutton Sheekh Kebab Mandi</h4>
+                                <span class="item-price">₹749 H / ₹1049 F</span>
+                            </div>
+                            <p class="item-desc">Minced boneless mutton is ground with spices and aromatics and then wrapped around a skewer.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Crispy Mutton Mandi</h4>
+                                <span class="item-price">₹749 H / ₹1049 F</span>
+                            </div>
+                            <p class="item-desc">Mutton cooked in arabian spices later coated with batter and crispy breadcrumbs and deep fried.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mutton Masala Mandi</h4>
+                                <span class="item-price">₹749 H / ₹1049 F</span>
+                            </div>
+                            <p class="item-desc">Tender mutton pieces in steam cooked in rich red gravy along with arabian traditional spices.</p>
+                        </div>
+
+                        <div class="menu-item special">
+                            <span class="badge">Traditional</span>
+                            <div class="item-header">
+                                <h4 class="item-name">Mutton Madfoon Mandi</h4>
+                                <span class="item-price">₹799 H / ₹1099 F</span>
+                            </div>
+                            <p class="item-desc">Marinated tender mutton cooked in an underground hole where it is placed on the sand and surrounded by charcoal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Non-Veg Starters -->
+                <div class="menu-category" data-category="starters">
+                    <div class="category-info">
+                        <p class="serving-note">Make any starter a Mandi — add ₹199 for mandi rice!</p>
+                    </div>
+
+                    <h3 class="subcategory-title">Chicken Starters</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken-65</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken-555</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Manchuria</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chilli Chicken</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Ginger Chicken</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Pepper Chicken</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Majestic</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Schezwan Chicken</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Drumsticks</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Lollipop</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Dragon Chicken</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Crispy Chicken</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Popcorn Chicken</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Sesame Chicken</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Pakodi</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subcategory-title">Fish & Prawns</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Fish Fry</h4>
+                                <span class="item-price">₹399</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Fish Crispy</h4>
+                                <span class="item-price">₹399</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chilli Fish</h4>
+                                <span class="item-price">₹399</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Dragon Fish</h4>
+                                <span class="item-price">₹399</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Apollo Fish</h4>
+                                <span class="item-price">₹399</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chilli Loose Prawns</h4>
+                                <span class="item-price">₹399</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item special">
+                            <span class="badge">Chef's Special</span>
+                            <div class="item-header">
+                                <h4 class="item-name">Crispy Prawns</h4>
+                                <span class="item-price">₹399</span>
+                            </div>
+                            <p class="item-desc">Prawn coated in spicy masala, batter, crispy breadcrumbs and deep fried.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Masala Prawns</h4>
+                                <span class="item-price">₹399</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Tandoori Prawns</h4>
+                                <span class="item-price">₹449</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BBQ & Kebabs -->
+                <div class="menu-category" data-category="bbq">
+                    <div class="category-info">
+                        <p class="serving-note">Make any kebab a Mandi — add ₹199 for mandi rice!</p>
+                    </div>
+                    
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Tandoori Chicken</h4>
+                                <span class="item-price">₹349 H / ₹649 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Malai Tikka</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Reshmi Kebab</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Zaafrani</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Tikka Kebab</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Tangdi Kebab</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Haryali Kebab</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Banjara Kebab</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Sheekh Kebab</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Masala Grilled Chicken</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item special">
+                            <span class="badge">Signature</span>
+                            <div class="item-header">
+                                <h4 class="item-name">Kush Special Double Sheekh Kebab</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                            <p class="item-desc">Chicken + Mutton</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kush Biryanis -->
+                <div class="menu-category" data-category="biryani">
+                    <div class="category-info">
+                        <p class="serving-note">All items for single person only.</p>
+                    </div>
+                    
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Biryani</h4>
+                                <span class="item-price">₹199</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Spl Chicken Biryani</h4>
+                                <span class="item-price">₹229</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Fry Piece Biryani</h4>
+                                <span class="item-price">₹199</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Lollipop Biryani</h4>
+                                <span class="item-price">₹199</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mutton Fry Piece Biryani</h4>
+                                <span class="item-price">₹249</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veg Mandis -->
+                <div class="menu-category" data-category="veg">
+                    <div class="category-info">
+                        <p class="serving-note">H = Half (Serves 2) · F = Full (Serves 3)</p>
+                    </div>
+
+                    <h3 class="subcategory-title">Veg Mandis</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mix Veg Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Panner BBQ Tikka Mandi</h4>
+                                <span class="item-price">₹549 H / ₹749 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Crispy Sweet Corn Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Panner Chilli Potato Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Panner Tikka Masala Mandi (Gravy)</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Panner Butter Masala Mandi (Gravy)</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Kadai Panner Masala Mandi (Gravy)</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Baby Corn Masala Mandi (Gravy)</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mushroom Masala Mandi (Gravy)</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Capsicum Masala Mandi (Gravy)</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Egg Omlette Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subcategory-title">Chinese Veg Mandis</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Veg Machurian Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Veg-65 Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Gobi-65 Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Aaloo-65 Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mushroom-65 Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mushroom Machurian Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chilli Machurian Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chilli Babycorn Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Corn Chilli Machurian Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chilli Panner Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Panner Majestic Mandi</h4>
+                                <span class="item-price">₹499 H / ₹679 F</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combos -->
+                <div class="menu-category" data-category="combos">
+                    <div class="menu-grid large-items">
+                        <div class="menu-item combo-item special">
+                            <span class="badge">Best Value</span>
+                            <div class="item-header">
+                                <h4 class="item-name">Kush Arabian Special Mandi</h4>
+                                <span class="item-price">₹1,799 (5P) / ₹2,999 (8P)</span>
+                            </div>
+                            <p class="item-desc">Chicken + Mutton + Fish + Prawns + Batair — the ultimate feast platter.</p>
+                        </div>
+
+                        <div class="menu-item combo-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Assorted Mixed Veg Mandi</h4>
+                                <span class="item-price">₹1,499 (5P) / ₹2,499 (8P)</span>
+                            </div>
+                            <p class="item-desc">A rich assortment of vegetarian delights on a grand mandi platter.</p>
+                        </div>
+
+                        <div class="menu-item combo-item special">
+                            <span class="badge">Pre-Order Only</span>
+                            <div class="item-header">
+                                <h4 class="item-name">Mutton Raann Faham Mandi</h4>
+                                <span class="item-price">₹3,999 (6P)</span>
+                            </div>
+                            <p class="item-desc">Marinated whole mutton leg slow cooked to perfection.</p>
+                        </div>
+
+                        <div class="menu-item combo-item special">
+                            <span class="badge">Pre-Order Only</span>
+                            <div class="item-header">
+                                <h4 class="item-name">Sabit Bakara Mandi</h4>
+                                <span class="item-price">₹19,999 (30P)</span>
+                            </div>
+                            <p class="item-desc">Full goat mandi — the grandest feast for large celebrations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curries & Breads -->
+                <div class="menu-category" data-category="curries">
+                    <h3 class="subcategory-title">Curries</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mix Veg Curry</h4>
+                                <span class="item-price">₹249</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Veg Kadai Curry</h4>
+                                <span class="item-price">₹249</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Masala Curry</h4>
+                                <span class="item-price">₹319</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Tikka Curry</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Andhra Mutton Curry</h4>
+                                <span class="item-price">₹399</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Hyd Mutton Masala</h4>
+                                <span class="item-price">₹429</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mutton Roghan Josh</h4>
+                                <span class="item-price">₹429</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mutton Kheema Curry</h4>
+                                <span class="item-price">₹429</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subcategory-title">Naan & Rotis</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Tandoori Roti</h4>
+                                <span class="item-price">₹59</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Butter Naan</h4>
+                                <span class="item-price">₹69</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Hyderabad Naan</h4>
+                                <span class="item-price">₹59</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Aaloo Parata</h4>
+                                <span class="item-price">₹79</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Gobi Parata</h4>
+                                <span class="item-price">₹79</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Garlic Naan</h4>
+                                <span class="item-price">₹69</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Laccha Parata</h4>
+                                <span class="item-price">₹79</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Pudina Parata</h4>
+                                <span class="item-price">₹79</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Panner Kulcha</h4>
+                                <span class="item-price">₹89</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subcategory-title">Add Ons</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Mandi Rice</h4>
+                                <span class="item-price">₹199</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Chicken Juicy Fry Piece</h4>
+                                <span class="item-price">₹199</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Crispy Chicken Piece</h4>
+                                <span class="item-price">₹199</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Crispy Faham Piece</h4>
+                                <span class="item-price">₹349</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Mutton Piece</h4>
+                                <span class="item-price">₹249</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Crispy Mutton Piece</h4>
+                                <span class="item-price">₹259</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Fish Piece</h4>
+                                <span class="item-price">₹249</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Mayonnaise</h4>
+                                <span class="item-price">₹49</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Soup</h4>
+                                <span class="item-price">₹49</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Tomato Gravy</h4>
+                                <span class="item-price">₹29</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Salad</h4>
+                                <span class="item-price">₹49</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Toppings</h4>
+                                <span class="item-price">₹49</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Extra Raitha</h4>
+                                <span class="item-price">₹49</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts & Drinks -->
+                <div class="menu-category" data-category="desserts">
+                    <h3 class="subcategory-title">Desserts</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item special">
+                            <span class="badge">Signature</span>
+                            <div class="item-header">
+                                <h4 class="item-name">Arabian Kunafa</h4>
+                                <span class="item-price">₹299</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Kaddu Ki Kheer</h4>
+                                <span class="item-price">₹69</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Kashmiri Ki Kheer</h4>
+                                <span class="item-price">₹149</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Double Ka Meetha</h4>
+                                <span class="item-price">₹69</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Badam Firni</h4>
+                                <span class="item-price">₹99</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Rabdi</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Gulab Jamun (3 Pcs)</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Apricot Delight</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subcategory-title">Beverages</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Water</h4>
+                                <span class="item-price">Complimentary</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Goli Soda</h4>
+                                <span class="item-price">₹20</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Soft Drinks</h4>
+                                <span class="item-price">₹25 – ₹59</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="story">
+        <div class="container">
+            <h2 class="about-title">
+                Where Flavor<br>
+                <span class="italic-gold">Meets Comfort</span>
+            </h2>
+            
+            <p class="about-text">
+                Kush Mandi brings you authentic mandi flavors with a modern dining experience in the heart of Gachibowli. 
+                Known for its perfectly cooked rice, tender meats, and crowd-favorite seafood dishes, it's a go-to destination 
+                for food lovers who crave bold, satisfying meals.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number">3<sup>+</sup> Years</h3>
+                    <p class="stat-label">Serving Joy</p>
+                </div>
+                
+                <div class="stat-item">
+                    <h3 class="stat-number">10,000<sup>+</sup></h3>
+                    <p class="stat-label">Happy Guests</p>
+                </div>
+                
+                <div class="stat-item">
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-label">Fresh Ingredients</p>
+                </div>
+            </div>
+
+            <div class="authentic-recipes">
+                <div class="recipe-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <path d="M24 4C24 4 14 10 14 20C14 26 18.5 30 24 30C29.5 30 34 26 34 20C34 10 24 4 24 4Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 30V44M18 44H30" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h4>Authentic Recipes</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Browse our restaurant moments and signature dishes in a curated slider.</p>
+            </div>
+
+            <div class="gallery-slider-wrapper">
+                <button class="gallery-arrow gallery-arrow-left" aria-label="Previous images">‹</button>
+                <div class="gallery-slider">
+                    <div class="gallery-track"></div>
+                </div>
+                <button class="gallery-arrow gallery-arrow-right" aria-label="Next images">›</button>
+            </div>
+        </div>
+
+        <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+            <button class="gallery-modal-close" aria-label="Close preview">×</button>
+            <button class="gallery-modal-prev" aria-label="Previous image">‹</button>
+            <div class="gallery-modal-content">
+                <img class="gallery-modal-image" src="" alt="Gallery preview" />
+                <p class="gallery-modal-caption"></p>
+            </div>
+            <button class="gallery-modal-next" aria-label="Next image">›</button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Loved by Locals</h2>
+                <p class="section-subtitle">Don't just take our word for it.</p>
+            </div>
+
+            <div class="testimonials-carousel">
+                <button class="testimonial-arrow testimonial-arrow-left" aria-label="Previous testimonial">‹</button>
+                <div class="testimonials-track-wrapper">
+                    <div class="testimonials-grid testimonials-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">R</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Rohan Goud</h4>
+                                        <p class="review-date">1 month ago</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "I had an amazing experience at Kush Mandi — one of the best Mandi places I've visited recently. 
+                                The mandi here was richly spiced, perfectly cooked, and incredibly flavorful, with the rice and meat 
+                                pairing beautifully."
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">S</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Sneha Reddy</h4>
+                                        <p class="review-date">2 weeks ago</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Absolutely loved the prawns biryani! The seafood was fresh, and the flavors were spot on. 
+                                The ambiance is cozy and perfect for family dinners. Highly recommend!"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">A</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Arjun Kumar</h4>
+                                        <p class="review-date">3 weeks ago</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Best mutton mandi in Hyderabad! The meat just falls off the bone. Great service and authentic taste. 
+                                Will definitely be coming back!"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">T</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Tharak K</h4>
+                                        <p class="review-date">5 months ago · Local Guide · 32 reviews · 63 photos</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "₹1,200–1,400. It's wonderful experience and good quality food and service also.
+                                Food: 5/5  |  Service: 5/5  |  Atmosphere: 5/5"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">K</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Kushalini</h4>
+                                        <p class="review-date">5 months ago · 1 review</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Food tastes good. Especially fish fry and crispy fish tastes awesome. Service is too good.
+                                Food: 5/5  |  Service: 5/5  |  Atmosphere: 5/5"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">S</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Sanju Goud</h4>
+                                        <p class="review-date">7 months ago · 4 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Food was very amazingggg. We went with our gangggg for the first time. They gave discount …More"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">A</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Anguru Keerthana3004</h4>
+                                        <p class="review-date">9 months ago · 1 review</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "I recently dined at kush mandi and had an amazing experience. The ambiance was perfect, and the service was top-notch. The food was absolutely delicious, especially the mandi. I highly recommend this place!"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">S</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Shaik Afrin</h4>
+                                        <p class="review-date">7 months ago · 2 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "The food was delicious and the ambience was cool, best place to hang out with friends and family, loved the service too.."
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">A</div>
+                                    <div>
+                                        <h4 class="reviewer-name">adithya rahul</h4>
+                                        <p class="review-date">2 months ago · Local Guide · 9 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Ambience food Way of speaking everything is perfect 👌"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">A</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Ankita Reddy</h4>
+                                        <p class="review-date">1 year ago · Local Guide · 18 reviews · 16 photos</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Good food with good customer service"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">D</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Datta Sapate</h4>
+                                        <p class="review-date">9 months ago · 4 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Very tasty I have visited with my friends. Faham mandi was very tasty 🤤"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">V</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Vijay Mudhiraj78</h4>
+                                        <p class="review-date">9 months ago · 3 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Food was delicious the faham mandi is too tasty must visit this place."
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">H</div>
+                                    <div>
+                                        <h4 class="reviewer-name">HANUMANTHU SAIKIRAN DORA</h4>
+                                        <p class="review-date">6 months ago · Local Guide · 43 reviews · 7 photos</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Unexpectedly I visit this but satisfied first time, so continue from last 2 months randomly."
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">R</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Reva Krishna</h4>
+                                        <p class="review-date">Edited 10 months ago · 2 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Must try crispy prawns. Mandhi rice and piece was too good. Liked the complimentary soup."
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">C</div>
+                                    <div>
+                                        <h4 class="reviewer-name">chandu. Galla</h4>
+                                        <p class="review-date">6 months ago · 2 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Good people interaction 👍 good food environment"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">M</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Mahesh Patel</h4>
+                                        <p class="review-date">2 months ago · 2 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Good food"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">S</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Sariut Molla</h4>
+                                        <p class="review-date">9 months ago · 2 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Must try Mutton juicy mandi & peaceful service by Yakub"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">C</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Chetan Pothineni</h4>
+                                        <p class="review-date">9 months ago · 1 review</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Food is 🙂, I have visited multiple times it's always want to visit again"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">S</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Shaik Sk</h4>
+                                        <p class="review-date">1 month ago · 10 reviews</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Very good"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">A</div>
+                                    <div>
+                                        <h4 class="reviewer-name">Ayyappa Swamy</h4>
+                                        <p class="review-date">5 months ago · Local Guide · 52 reviews · 14 photos</p>
+                                    </div>
+                                </div>
+                                <svg class="google-icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Try some juicy mandi that is great"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="testimonial-arrow testimonial-arrow-right" aria-label="Next testimonial">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us Section -->
+    <section class="visit-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Visit Us</h2>
+                <p class="section-subtitle">
+                    Conveniently located in Gachibowli, perfect for a quick lunch or a relaxed dinner feast.
+                </p>
+            </div>
+
+            <div class="visit-info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5C13 5 7 11 7 18C7 27 20 35 20 35C20 35 33 27 33 18C33 11 27 5 20 5Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="info-content">
+                        <h3>Address</h3>
+                        <p>
+                            Building 12&13, Sri Balaji Complex,<br>
+                            1st Floor, 8-191,<br>
+                            Gachibowli Rd,<br>
+                            Madhura Nagar Colony, Rai Durg,<br>
+                            Hyderabad, Telangana 500104
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 10V20L26 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="info-content">
+                        <h3>Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>11 am–12 am</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Monday</span>
+                                <span>11 am–12 am</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Tuesday</span>
+                                <span>11 am–12 am</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Wednesday</span>
+                                <span>11 am–12 am</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Thursday</span>
+                                <span>11 am–12 am</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Friday</span>
+                                <span>11 am–12 am</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>11 am–12 am</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M12 8C10 8 8 10 8 12C8 14 9 16 11 18L18 25C19 26 21 26 22 25L29 18C31 16 32 14 32 12C32 10 30 8 28 8C26 8 24 9 22 11L20 13L18 11C16 9 14 8 12 8Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="info-content">
+                        <h3>Contact</h3>
+                        <a href="tel:+919985999994" class="contact-link">+91 99859 99994</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directions-btn-wrapper">
+                <a href="https://maps.google.com/?q=Building+12+13+Sri+Balaji+Complex+Gachibowli+Rd+Hyderabad" 
+                   target="_blank" 
+                   class="btn btn-primary btn-large">
+                    Get Directions
+                </a>
+            </div>
+        </div>
+        <div style="margin: 40px auto; max-width: 900px;">
+  
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.698494560885!2d78.37443967347154!3d17.426251183467482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93fe179ed41f%3A0x38e7fb72e8eedd7!2sKush%20Mandi!5e0!3m2!1sen!2sin!4v1774771739149!5m2!1sen!2sin"
+    width="100%" 
+    height="350" 
+    style="border:0; border-radius:12px; display:block;"
+    loading="lazy">
+  </iframe> 
+
+</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-kush">Kush</span>
+                        <span class="logo-mandi">Mandi</span>
+                    </div>
+                    <p class="footer-desc">
+                        The true taste of authentic mandi in Hyderabad. Join us for a feast that brings people together.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="footer-links social-links">
+                        <li><a href="https://www.instagram.com/kushmandi2025?igsh=MXB0cjQ0bnp1a2FvMQ==" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.zomato.com/hyderabad/kush-mandi-gachibowli/order?v=o2" target="_blank" rel="noopener">Zomato</a></li>
+                        <li><a href="https://www.swiggy.com/city/hyderabad/kush-mandi-gachibowli-gachibowli-rest1062885?utm_source=GooglePlaceOrder&utm_campaign=GoogleMap&is_retargeting=true&media_source=GooglePlaceOrder" target="_blank" rel="noopener">Swiggy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kush Mandi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+function openBooking(){
+  window.open("https://www.google.com/maps/reserve/v/dine/c/GJ5F4uUUYxE?source=pa&opi=79508299&hl=en-IN&gei=FN7IabHnO-vOseMP-PLFiA8&sourceurl=https://www.google.com/search?tbm%3Dmap%26authuser%3D0%26hl%3Den%26gl%3Din%26pb%3D!4m12!1m3!1d177021.23190441937!2d78.462976!3d17.416192000000002!2m3!1f0!2f0!3f0!3m2!1i1036!2i558!4f13.1!7i20!10b1!12m26!1m5!18b1!30b1!31m1!1b1!34e1!2m4!5m1!6e2!20e3!39b1!10b1!12b1!13b1!16b1!17m1!3e1!20m4!5e2!6b1!8b1!14b1!46m1!1b0!96b1!99b1!19m4!2m3!1i360!2i120!4i8!20m65!2m2!1i203!2i100!3m2!2i4!5b1!6m6!1m2!1i86!2i86!1m2!1i408!2i240!7m33!1m3!1e1!2b0!3e3!1m3!1e2!2b1!3e2!1m3!1e2!2b0!3e3!1m3!1e8!2b0!3e3!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e10!2b0!3e4!1m3!1e9!2b1!3e2!2b1!9b0!15m16!1m7!1m2!1m1!1e2!2m2!1i195!2i195!3i20!1m7!1m2!1m1!1e2!2m2!1i195!2i195!3i20!22m6!1sCt7IaaWZJdagnesPzbvu8A0:3!2s1i:0,t:11886,p:Ct7IaaWZJdagnesPzbvu8A0:3!7e81!12e5!17sCt7IaaWZJdagnesPzbvu8A0:67!18e15!24m109!1m27!13m9!2b1!3b1!4b1!6i1!8b1!9b1!14b1!20b1!25b1!18m16!3b1!4b1!5b1!6b1!9b1!13b1!14b1!17b1!20b1!21b1!22b1!32b1!33m1!1b1!34b1!36e2!10m1!8e3!11m1!3e1!17b1!20m2!1e3!1e6!24b1!25b1!26b1!27b1!29b1!30m1!2b1!36b1!37b1!39m3!2m2!2i1!3i1!43b1!52b1!54m1!1b1!55b1!56m1!1b1!61m2!1m1!1e1!65m5!3m4!1m3!1m2!1i224!2i298!72m22!1m8!2b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!4b1!8m10!1m6!4m1!1e1!4m1!1e3!4m1!1e4!3sother_user_google_review_posts__and__hotel_and_vr_partner_review_posts!6m1!1e1!9b1!89b1!90m2!1m1!1e2!98m3!1b1!2b1!3b1!103b1!113b1!114m3!1b1!2m1!1b1!117b1!122m1!1b1!126b1!127b1!128m1!1b0!26m4!2m3!1i80!2i92!4i8!30m28!1m6!1m2!1i0!2i0!2m2!1i530!2i558!1m6!1m2!1i986!2i0!2m2!1i1036!2i558!1m6!1m2!1i0!2i0!2m2!1i1036!2i20!1m6!1m2!1i0!2i538!2m2!1i1036!2i558!34m19!2b1!3b1!4b1!6b1!8m6!1b1!3b1!4b1!5b1!6b1!7b1!9b1!12b1!14b1!20b1!23b1!25b1!26b1!31b1!37m1!1e81!42b1!47m0!49m10!3b1!6m2!1b1!2b1!7m2!1e3!2b1!8b1!9b1!10e2!50m4!2e2!3m2!1b1!3b1!67m5!7b1!10b1!14b1!15m1!1b0!69i772!77b1%26q%3Dkush%2Bmandi%26oq%3Dkush%2Bmandi%26gs_l%3Dmaps.3..38i426k1j38i72k1l2j38i444k1j38i72k1.1644.5587.1.6344.10.10.....208.1592.0j8j2.10.....0....1..maps..0.10.1798.0..38i429k1.%26ech%3D1%26psi%3DCt7IaaWZJdagnesPzbvu8A0.1774771725751.1", "_blank");
+}
+</script>
+<script>
+const tabs = document.querySelectorAll(".menu-tab");
+const categories = document.querySelectorAll(".menu-category");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+
+    tabs.forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    const category = tab.getAttribute("data-category");
+
+    categories.forEach(c => {
+      c.classList.remove("active");
+      if (c.getAttribute("data-category") === category) {
+        c.classList.add("active");
+      }
+    });
+
+  });
+});
+</script>
+
+<a href="tel:+919985999994" class="call-now-button" aria-label="Call Kush Mandi">
+    <span>📞</span>
+    Call Now
+</a>
+</body>
+</html>
